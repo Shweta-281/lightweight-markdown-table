@@ -1,0 +1,31 @@
+{
+  "name": "lightweight-markdown-table",
+  "version": "1.0.0",
+  "description": "Convert JSON/arrays to markdown tables with alignment options",
+  "main": "src/index.js",
+  "bin": {
+    "md-table": "src/cli.js"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.test.js",
+    "lint": "eslint src test",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "keywords": [
+    "markdown",
+    "table",
+    "json",
+    "converter",
+    "documentation"
+  ],
+  "author": "Shweta Salunkhe <shwetasalunkhe281@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "eslint": "^8.57.1",
+    "mocha": "^10.8.2"
+  }
+}
